@@ -429,7 +429,90 @@ h3 {
 }
 
 /* ----- CONTACT FORM ----- */
-.form-control {
+
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #00c9ff;
+}
+
+textarea {
+    resize: none;
+    
+    height: 150px;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #00c9ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+}
+
+.btn:hover {
+    background: #00a1cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%; /* Full-width button on smaller screens */
+    }
+}
+/*.form-control {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -472,7 +555,7 @@ textarea {
 .form-button i {
     font-size: 18px;
     rotate: -45deg;
-}
+}*/
 
 /* ----- FOOTER BOX ----- */
 footer {
